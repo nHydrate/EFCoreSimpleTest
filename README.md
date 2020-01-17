@@ -8,6 +8,7 @@ This sample project uses the nHydrate modeler to define a two entity model. Ther
 
 
 
+
 <p align="center" style="padding-top:20px;">
 <img src="http://nhydrate.org/images/nhydrate-medium.png" title="nHydrate for Entity Framework" >
 </p>

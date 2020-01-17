@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<configuration type="entity" name="Customer" id="809dbf18-8aa8-4649-add4-70aa7cf17b86" allowaudittracking="0" allowcreateaudit="1" allowmodifyaudit="1" allowtimestamp="1" codefacade="" immutable="0" enforceprimarykey="1" isassociative="0" typedentity="None" schema="" generatesdoublederived="0" isgenerated="1" isTenant="0">
+		<summary><![CDATA[]]></summary>
+		<fieldset>
+				<field id="435f85c8-479c-4c89-9595-d1fcf9be4ee0" name="CustomerId" nullable="0" datatype="Int" identity="Database" codefacade="" dataformatstring="" default="" defaultisfunc="0" formula="" isgenerated="1" isindexed="1" isprimarykey="1" Iscalculated="0" isunique="1" length="4" scale="0" sortorder="1" isreadonly="0" category="" collate="" friendlyname="" isbrowsable="1" max="NaN" min="NaN" validationexpression="" obsolete="0">
+						<summary><![CDATA[]]></summary>
+				</field>
+				<field id="9e704ace-1fec-4bd7-8398-c095e0a19cbf" name="FirstName" nullable="0" datatype="VarChar" identity="None" codefacade="" dataformatstring="" default="" defaultisfunc="0" formula="" isgenerated="1" isindexed="0" isprimarykey="0" Iscalculated="0" isunique="0" length="50" scale="0" sortorder="2" isreadonly="0" category="" collate="" friendlyname="" isbrowsable="1" max="NaN" min="NaN" validationexpression="" obsolete="0">
+						<summary><![CDATA[]]></summary>
+				</field>
+				<field id="96106923-8beb-4c08-a12d-88b587f74fd1" name="LastName" nullable="0" datatype="VarChar" identity="None" codefacade="" dataformatstring="" default="" defaultisfunc="0" formula="" isgenerated="1" isindexed="0" isprimarykey="0" Iscalculated="0" isunique="0" length="50" scale="0" sortorder="3" isreadonly="0" category="" collate="" friendlyname="" isbrowsable="1" max="NaN" min="NaN" validationexpression="" obsolete="0">
+						<summary><![CDATA[]]></summary>
+				</field>
+		</fieldset>
+</configuration>

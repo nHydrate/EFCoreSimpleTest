@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<configuration type="entity" name="Order" id="ecbcc7ef-4fa1-4772-8770-24d8e33efc82" allowaudittracking="0" allowcreateaudit="1" allowmodifyaudit="1" allowtimestamp="1" codefacade="" immutable="0" enforceprimarykey="1" isassociative="0" typedentity="None" schema="" generatesdoublederived="0" isgenerated="1" isTenant="0">
+		<summary><![CDATA[]]></summary>
+		<fieldset>
+				<field id="359da6f1-64a8-4279-830a-fddea4342c48" name="CustomerId" nullable="0" datatype="Int" identity="None" codefacade="" dataformatstring="" default="" defaultisfunc="0" formula="" isgenerated="1" isindexed="0" isprimarykey="0" Iscalculated="0" isunique="0" length="4" scale="0" sortorder="2" isreadonly="0" category="" collate="" friendlyname="" isbrowsable="1" max="NaN" min="NaN" validationexpression="" obsolete="0">
+						<summary><![CDATA[]]></summary>
+				</field>
+				<field id="269a4222-65d6-4caf-ba23-9e9e961caa50" name="OrderId" nullable="0" datatype="Int" identity="Database" codefacade="" dataformatstring="" default="" defaultisfunc="0" formula="" isgenerated="1" isindexed="1" isprimarykey="1" Iscalculated="0" isunique="1" length="4" scale="0" sortorder="1" isreadonly="0" category="" collate="" friendlyname="" isbrowsable="1" max="NaN" min="NaN" validationexpression="" obsolete="0">
+						<summary><![CDATA[]]></summary>
+				</field>
+				<field id="c834c4d1-7d3e-4bf0-825e-27010760ae13" name="Price" nullable="0" datatype="Int" identity="None" codefacade="" dataformatstring="" default="" defaultisfunc="0" formula="" isgenerated="1" isindexed="0" isprimarykey="0" Iscalculated="0" isunique="0" length="4" scale="0" sortorder="3" isreadonly="0" category="" collate="" friendlyname="" isbrowsable="1" max="NaN" min="NaN" validationexpression="" obsolete="0">
+						<summary><![CDATA[]]></summary>
+				</field>
+		</fieldset>
+</configuration>

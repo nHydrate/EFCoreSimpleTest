@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+
+namespace Acme.TestProject.Install
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+                Example Connection String
+                server=.;initial catalog=MyDatabase;Integrated Security=SSPI;
+                server=.;initial catalog=MyDatabase;user id=sa;password=Password1;
+
+                Example command line to create a database
+                /create /newdb:"MyDatabase" /master:"server=.;initial catalog=master;Integrated Security=SSPI;" /connectionstring:"server=.;initial catalog=MyDatabase;Integrated Security=SSPI;"
+
+                Example command line to update a database
+                /update /connectionstring:"server=.;initial catalog=MyDatabase;Integrated Security=SSPI;"
+
+             */
+
+            System.Console.WriteLine("Starting Install...");
+            var stateSaver = new Dictionary<object, object>();
+            var installer = new DatabaseInstaller();
+            installer.Install(stateSaver);
+            System.Console.WriteLine("Install Complete");
+        }
+    }
+}

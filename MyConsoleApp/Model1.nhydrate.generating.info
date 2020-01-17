@@ -1,0 +1,9 @@
+<configuration GeneratedVersion="3" ModelerVersion="7.0.0.228">
+  <excludeList>
+    <item>nHydrate.Generator.Datasite.DatasiteProjectGenerator</item>
+    <item>nHydrate.Generator.PostgresInstaller.PostgresDatabaseProjectGenerator</item>
+  </excludeList>
+  <generatedModuleList />
+  <tableFacadeSettings />
+  <columnFacadeSettings />
+</configuration>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Acme.TestProject.Install": {
+      "commandName": "Project",
+      "commandLineArgs": "/create /newdb:TestProject /master:\"server=.;initial catalog=master;Integrated Security=SSPI;\" /connectionstring:\"server=.;initial catalog=TestProject;Integrated Security=SSPI;\""
+    }
+  }
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<modelRoot guid="7413288b-2c2b-4276-a4bb-7a8fc35d767e" type="nHydrate.Generator.nHydrateGeneratorProject" assembly="nHydrate.Generator.dll">
+		<ModelRoot key="7413288b-2c2b-4276-a4bb-7a8fc35d767e" projectName="TestProject" transformNames="0" enableCustomChangeEvents="1" supportLegacySearchObject="0" useUTCTime="False" version="0.0.0.0" companyName="Acme" emitSafetyScripts="1" tenantColumnName="__tenant_user" tenantPrefix="__vw_tenant" allowMocks="0" companyAbbreviation="" defaultNamespace="" storedProcedurePrefix="gen" sqlType="SQL2008" efversion="EF6">
+				<copyright><![CDATA[]]></copyright>
+				<database key="7413288b-2c2b-4276-a4bb-7a8fc35d767e" createdByColumnName="CreatedBy" createdDateColumnName="CreatedDate" modifiedByColumnName="ModifiedBy" modifiedDateColumnName="ModifiedDate" timestampColumnName="Timestamp" fullIndexSearchColumnName="full_index_text" grantExecUser="" useGeneratedCRUD="False" tablePrefix="" collate="" databaseName="">
+						<columns key="00000000-0000-0000-0000-000000000000">
+								<c key="435f85c8-479c-4c89-9595-d1fcf9be4ee0" primaryKey="1" identity="1" name="CustomerId" dataFieldSortOrder="1" isIndexed="1" isUnique="1" id="147204388" type="8" allowNull="0">
+										<pt key="809dbf18-8aa8-4649-add4-70aa7cf17b86" ref="1994285543" refType="1" />
+								</c>
+								<c key="359da6f1-64a8-4279-830a-fddea4342c48" name="CustomerId" dataFieldSortOrder="2" id="214280518" type="8" allowNull="0">
+										<pt key="ecbcc7ef-4fa1-4772-8770-24d8e33efc82" ref="1234051160" refType="1" />
+								</c>
+								<c key="9e704ace-1fec-4bd7-8398-c095e0a19cbf" name="FirstName" dataFieldSortOrder="2" id="1886818765" type="22" allowNull="0">
+										<pt key="809dbf18-8aa8-4649-add4-70aa7cf17b86" ref="1994285543" refType="1" />
+								</c>
+								<c key="96106923-8beb-4c08-a12d-88b587f74fd1" name="LastName" dataFieldSortOrder="3" id="2054766293" type="22" allowNull="0">
+										<pt key="809dbf18-8aa8-4649-add4-70aa7cf17b86" ref="1994285543" refType="1" />
+								</c>
+								<c key="269a4222-65d6-4caf-ba23-9e9e961caa50" primaryKey="1" identity="1" name="OrderId" dataFieldSortOrder="1" isIndexed="1" isUnique="1" id="134215027" type="8" allowNull="0">
+										<pt key="ecbcc7ef-4fa1-4772-8770-24d8e33efc82" ref="1234051160" refType="1" />
+								</c>
+								<c key="c834c4d1-7d3e-4bf0-825e-27010760ae13" name="Price" dataFieldSortOrder="3" id="1709893243" type="8" allowNull="0">
+										<pt key="ecbcc7ef-4fa1-4772-8770-24d8e33efc82" ref="1234051160" refType="1" />
+								</c>
+						</columns>
+						<customviewcolumns key="00000000-0000-0000-0000-000000000000" />
+						<customstoredprocedurecolumns key="00000000-0000-0000-0000-000000000000" />
+						<functioncolumns key="00000000-0000-0000-0000-000000000000" />
+						<customretrieveruleparameters key="00000000-0000-0000-0000-000000000000" />
+						<functionparameters key="00000000-0000-0000-0000-000000000000" />
+						<relations key="00000000-0000-0000-0000-000000000000">
+								<r key="1d089038-a59e-45fd-8b4c-5da9d76d7e07" enforce="1" deleteAction="NoAction" id="2098819616">
+										<crl>
+												<cr>
+														<pt key="435f85c8-479c-4c89-9595-d1fcf9be4ee0" ref="147204388" refType="0" />
+														<ct key="359da6f1-64a8-4279-830a-fddea4342c48" ref="214280518" refType="0" />
+												</cr>
+										</crl>
+										<ct key="ecbcc7ef-4fa1-4772-8770-24d8e33efc82" ref="1234051160" refType="1" />
+										<pt key="809dbf18-8aa8-4649-add4-70aa7cf17b86" ref="1994285543" refType="1" />
+								</r>
+						</relations>
+						<viewrelations key="00000000-0000-0000-0000-000000000000" />
+						<tables key="00000000-0000-0000-0000-000000000000">
+								<t key="809dbf18-8aa8-4649-add4-70aa7cf17b86" name="Customer" dbschema="" id="1994285543">
+										<r key="00000000-0000-0000-0000-000000000000">
+												<f key="1d089038-a59e-45fd-8b4c-5da9d76d7e07" ref="2098819616" refType="2" />
+										</r>
+										<til>
+												<ti key="6993dd62-dec5-4aa2-a99d-50ea9f29a3cf" isUnique="1" primaryKey="1" clustered="1" description="" importedName="" id="1745696830">
+														<ticl>
+																<tic ascending="1" fieldID="435f85c8-479c-4c89-9595-d1fcf9be4ee0" id="1" />
+														</ticl>
+												</ti>
+										</til>
+										<c key="00000000-0000-0000-0000-000000000000">
+												<f key="435f85c8-479c-4c89-9595-d1fcf9be4ee0" ref="147204388" refType="0" />
+												<f key="9e704ace-1fec-4bd7-8398-c095e0a19cbf" ref="1886818765" refType="0" />
+												<f key="96106923-8beb-4c08-a12d-88b587f74fd1" ref="2054766293" refType="0" />
+										</c>
+										<security key="00000000-0000-0000-0000-000000000000" sql="">
+												<parameters key="00000000-0000-0000-0000-000000000000" />
+										</security>
+								</t>
+								<t key="ecbcc7ef-4fa1-4772-8770-24d8e33efc82" name="Order" dbschema="" id="1234051160">
+										<til>
+												<ti key="dec8f209-bcb3-40bd-ac3f-919e7d24dfa2" isUnique="1" primaryKey="1" clustered="1" description="" importedName="" id="130462816">
+														<ticl>
+																<tic ascending="1" fieldID="269a4222-65d6-4caf-ba23-9e9e961caa50" id="1" />
+														</ticl>
+												</ti>
+										</til>
+										<c key="00000000-0000-0000-0000-000000000000">
+												<f key="269a4222-65d6-4caf-ba23-9e9e961caa50" ref="134215027" refType="0" />
+												<f key="359da6f1-64a8-4279-830a-fddea4342c48" ref="214280518" refType="0" />
+												<f key="c834c4d1-7d3e-4bf0-825e-27010760ae13" ref="1709893243" refType="0" />
+										</c>
+										<security key="00000000-0000-0000-0000-000000000000" sql="">
+												<parameters key="00000000-0000-0000-0000-000000000000" />
+										</security>
+								</t>
+						</tables>
+						<functions key="00000000-0000-0000-0000-000000000000" />
+						<customviews key="00000000-0000-0000-0000-000000000000" />
+						<customstoredprocedures key="00000000-0000-0000-0000-000000000000" />
+				</database>
+				<versionHistoryList />
+		</ModelRoot>
+</modelRoot>

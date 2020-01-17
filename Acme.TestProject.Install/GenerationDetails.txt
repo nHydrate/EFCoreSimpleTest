@@ -1,0 +1,19 @@
+DO NOT MODIFY THIS FILE. IT IS ALWAYS OVERWRITTEN ON GENERATION.
+Generation Details
+
+Version 0.0.0.0
+Table Count: 2
+Tenant Table Count: 0
+View Count: 0
+StoredProc Count: 0
+
+TABLE LIST
+Customer, ColumnCount=3, IsTenant=False
+    Field: [Customer].[CustomerId], Not Nullable, Primary Key, AutoNumber, Unique, Indexed
+    Field: [Customer].[FirstName], Field Length: 50, Not Nullable
+    Field: [Customer].[LastName], Field Length: 50, Not Nullable
+Order, ColumnCount=3, IsTenant=False
+    Field: [Order].[CustomerId], Not Nullable
+    Field: [Order].[OrderId], Not Nullable, Primary Key, AutoNumber, Unique, Indexed
+    Field: [Order].[Price], Not Nullable
+

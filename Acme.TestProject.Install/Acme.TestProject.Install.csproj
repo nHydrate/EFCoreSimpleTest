@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>Acme.TestProject.Install.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1_UserDefinedInitialization\UnVersioned\UnversionedUpgradeScript.sql" />
+    <None Remove="2_Upgrade Scripts\0000_0000_0000_0000_0003_UpgradeScript.sql" />
+    <None Remove="3_GeneratedTablesAndData\1_CreateSchema.sql" />
+    <None Remove="3_GeneratedTablesAndData\2_CreateData.sql" />
+    <None Remove="3_GeneratedTablesAndData\3_CreateRelations.sql" />
+    <None Remove="3_GeneratedTablesAndData\4_CreateSchemaAuditTriggers.sql" />
+    <None Remove="5_Programmability\Functions\Model\Functions.sql" />
+    <None Remove="5_Programmability\ScriptOrder.nOrder" />
+    <None Remove="5_Programmability\Stored Procedures\Internal\StoredProcedures.sql" />
+    <None Remove="5_Programmability\Stored Procedures\Model\StoredProcedures.sql" />
+    <None Remove="5_Programmability\Views\Model\Views.sql" />
+    <None Remove="GenerationDetails.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="1_UserDefinedInitialization\UnVersioned\UnversionedUpgradeScript.sql" />
+    <EmbeddedResource Include="2_Upgrade Scripts\0000_0000_0000_0000_0003_UpgradeScript.sql" />
+    <EmbeddedResource Include="3_GeneratedTablesAndData\1_CreateSchema.sql" />
+    <EmbeddedResource Include="3_GeneratedTablesAndData\2_CreateData.sql" />
+    <EmbeddedResource Include="3_GeneratedTablesAndData\3_CreateRelations.sql" />
+    <EmbeddedResource Include="3_GeneratedTablesAndData\4_CreateSchemaAuditTriggers.sql" />
+    <EmbeddedResource Include="5_Programmability\Functions\Model\Functions.sql" />
+    <EmbeddedResource Include="5_Programmability\ScriptOrder.nOrder" />
+    <EmbeddedResource Include="5_Programmability\Stored Procedures\Internal\StoredProcedures.sql" />
+    <EmbeddedResource Include="5_Programmability\Stored Procedures\Model\StoredProcedures.sql" />
+    <EmbeddedResource Include="5_Programmability\Views\Model\Views.sql" />
+    <EmbeddedResource Include="GenerationDetails.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Core.System.Configuration.Install" Version="1.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="System.Management" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>System</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <HintPath>System.Configuration.Install</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="DatabaseInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="if not exist &quot;$(SolutionDir)bin&quot; mkdir &quot;$(SolutionDir)bin&quot;&#xD;&#xA;attrib -r &quot;$(SolutionDir)Bin\*.*&quot;" />
+  </Target>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy &quot;$(TargetDir)$(TargetName).*&quot; &quot;$(SolutionDir)Bin\&quot;" />
+  </Target>
+
+</Project>
